@@ -125,6 +125,15 @@
 .icon-vk:before {
   content: "\e902";
 }
+.icon-cargo:before {
+	content: url('../img/cargo.svg');
+}
+.icon-star-o:before {
+	content: url('../img/star-o.svg');
+}
+.icon-percent-o:before {
+	content: url('../img/percent-o.svg');
+}
 
 
 // Variables ==========================================================
@@ -142,15 +151,18 @@
 	// }
 $main_font_family:								'Muller Regular';
 
-$color-main:		#000000;
-$color-danger:     	#ca1f1f;
-$color-success:		#fac85a;
+$color-main:									#000000;
+$color-primary:    								#6478c8;
+$color-danger:     								#ca1f1f;
+$color-success:									#fac85a;
+$color-warning:									#aae090;
+$color-muted:									#999999;
 
 $el-bg-colors: (
-	primary: #000000, // color for .element__primary
+	primary: $color-primary, // color for .element__primary
 	success: $color-success, // color for .element__success
-	info: #03a9f4, // color for .element__info
-	warning: #FF8833, // color for .element__warning
+	muted: $color-muted, // color for .element__info
+	warning: $color-warning, // color for .element__warning
 	danger: $color-danger, // color for .element__danger
 );
 
@@ -387,6 +399,9 @@ input[type=checkbox]:disabled:indeterminate:before {
 				background-color: darken($color_el_bg, 10%);
 			}
 		}
+	}
+	&-success {
+		color: $color-main;
 	}	
 }
 
@@ -398,6 +413,65 @@ input[type=checkbox]:disabled:indeterminate:before {
 	}	
 }
 
+.uk-badge {
+	@each $status_el, $color_el_bg in $el_bg_colors {
+		&-#{$status_el} {
+			background-color: $color_el_bg;
+			color: $color-main;
+			&:hover {
+				background-color: lighten($color_el_bg, 10%);
+			}
+			&:active {
+				background-color: darken($color_el_bg, 10%);
+			}
+		}
+	}
+	&-primary {
+		color: #fff;
+	}
+	i {
+		display: block;
+	}
+}
+
+.uk-tab {
+	border: none;
+	&>li {
+		margin-right: 8.3%;
+		position: relative;
+		&:hover {
+			background-color: transparent;
+		}
+		&.uk-active {
+			&>a {
+				color: $color-main;
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+		&>a {
+			color: $color-main;
+			font-family: "Muller Medium";
+			font-size: 28px;
+			border: none !important;
+			padding: 0 0 19px;
+			&:after {
+				content: '';
+				display: block;
+				height: 4px;
+				background-color: $color-danger;
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				opacity: 0;
+			}
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}
 
 // Style for columns text
 .column {
@@ -562,6 +636,17 @@ a {
 	@extend %clear_a;
 }
 
+.section {
+	&__title {
+		color: $color-danger;
+		font-family: "Muller Black";
+		font-size: 48px;
+		text-transform: uppercase;
+		margin-bottom: 31px;
+		line-height: 1.3;
+	}
+}
+
 
 // First ======================================================================
 .first__screen {
@@ -649,9 +734,155 @@ a {
 		}
 	}
 	.uk-container {}
+	&__list {
+		margin: 6.5% 0;
+	}
+	&__grid {
+		margin-top: 56px;
+		margin-left: -20px;
+		&_wrapp {
+			padding-left: 20px;
+			margin-bottom: 35px;
+		}
+		&_item {
+			z-index: 1;
+			position: relative;
+			@include trs(.2s);
+			@include border-radius(5px);
+			box-sizing: content-box;
+			&:hover {
+				box-shadow: 0 0 20px transparentize($color-main, .5);
+				margin: -20px;
+				padding: 20px;
+				z-index: 2;
+				// position: absolute;
+				.sofas__grid_description {
+					position: absolute;
+					left: 0;
+					padding: 0 20px 20px;
+					height: auto;
+					z-index: 3;
+					box-shadow: 0 0 20px transparentize($color-main, .5);
+					overflow: inherit;
+					&:before {
+						content: '';
+						// width: 100%;
+						left: 0;
+					}
+				}
+			}
+		}
+		&_img {
+			position: relative;
+			padding-bottom: 107.6%;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+				display: block;
+				position: absolute;
+			}
+			.uk-badge {
+				font-family: "Muller Medium";
+				font-size: 12px;
+				padding: 10px;
+				position: absolute;
+				right: 0;
+				&+.uk-badge {
+					margin-right: 80px;
+				}
+				i {
+					height: 24px;
+					margin-bottom: 6px;
+				}
+			}
+		}
+		&_description {
+			height: 100px;
+			width: 100%;
+			overflow: hidden;
+			background-color: #fff;
+			&:before {
+				content: '';
+				@include trs(.2s);
+				position: absolute;
+				width: 100%;
+				height: 16px;
+				top: -16px;
+				background-color: #fff;
+				display: block;
+			}
+		}
+		&_name {
+			font-family: "Muller Bold";
+			font-size: 21px;
+			text-transform: uppercase;
+			margin-bottom: 1px;
+		}
+		&_sub {
+			color: #808080;
+			font-size: 14px;
+			margin-bottom: 6px;
+		}
+		&_price {
+			color: $color-danger;
+			font-family: "Muller Bold";
+			font-size: 28px;
+			margin-bottom: 17px;
+			&_old {
+				font-family: "Muller Regular";
+				font-size: 16px;
+				text-decoration: line-through;
+				color: $color-muted;
+				margin-right: 10px;
+			}
+		}
+		&_color {
+			color: #808080;
+			font-family: "Muller Regular";
+			font-size: 12px;
+			margin-bottom: 22px;
+			&_item {
+				display: inline-block;
+				width: 36px;
+				height: 36px;
+				@include border-radius(4px);
+				margin-right: 8px;
+			}
+			&_title {
+				margin-bottom: 8px;
+			}
+		}
+		&_size {
+			// margin-top: 10px;
+			margin-bottom: 14px;
+			&_item {
+				font-size: 14px;
+			}
+			&_name {
+				color: #808080;
+				font-size: 12px;
+			}
+		}
+		.uk-button-success {
+			width: 100%;
+			font-size: 21px;
+			padding: 14px;
+			margin-top: 10px;
+		}
+	}
 }
-.uk-grid {}
-.uk-grid-width-1-2 {}
+
+.uk-badge {
+	padding: 5px;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	@include border-radius(5px);
+}
+
+.uk-switcher {}
+
 
 /* Footer
  ----------------------------------------------------------------------------- */

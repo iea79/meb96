@@ -69,7 +69,7 @@ $(document).ready(function() {
 		// resetSliders: false,
 		// fadingEffect: false,
 		// normalScrollElements: '#sofas',
-		// scrollOverflow: false,
+		scrollOverflow: true,
 		// scrollOverflowReset: false,
 		// scrollOverflowOptions: null,
 		// touchSensitivity: 15,

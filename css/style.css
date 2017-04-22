@@ -71,6 +71,15 @@
 .icon-vk:before {
   content: "\e902"; }
 
+.icon-cargo:before {
+  content: url("../img/cargo.svg"); }
+
+.icon-star-o:before {
+  content: url("../img/star-o.svg"); }
+
+.icon-percent-o:before {
+  content: url("../img/percent-o.svg"); }
+
 .footer:after, .header:after, .uk-container:after {
   content: '';
   display: table;
@@ -324,46 +333,117 @@ input[type=checkbox]:disabled:indeterminate:before {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   .uk-button-primary {
-    background-color: #000000; }
+    background-color: #6478c8; }
     .uk-button-primary:hover {
-      background-color: #1a1a1a; }
+      background-color: #8a99d5; }
     .uk-button-primary:active {
-      background-color: black; }
+      background-color: #4159b8; }
   .uk-button-success {
     background-color: #fac85a; }
     .uk-button-success:hover {
       background-color: #fcd98c; }
     .uk-button-success:active {
       background-color: #f9b829; }
-  .uk-button-info {
-    background-color: #03a9f4; }
-    .uk-button-info:hover {
-      background-color: #2ebcfc; }
-    .uk-button-info:active {
-      background-color: #0286c2; }
+  .uk-button-muted {
+    background-color: #999999; }
+    .uk-button-muted:hover {
+      background-color: #b3b3b3; }
+    .uk-button-muted:active {
+      background-color: gray; }
   .uk-button-warning {
-    background-color: #FF8833; }
+    background-color: #aae090; }
     .uk-button-warning:hover {
-      background-color: #ffa666; }
+      background-color: #c9ebb8; }
     .uk-button-warning:active {
-      background-color: #ff6a00; }
+      background-color: #8bd568; }
   .uk-button-danger {
     background-color: #ca1f1f; }
     .uk-button-danger:hover {
       background-color: #e13b3b; }
     .uk-button-danger:active {
       background-color: #9e1818; }
+  .uk-button-success {
+    color: #000000; }
 
 .uk-text-primary {
-  color: #000000; }
+  color: #6478c8; }
 .uk-text-success {
   color: #fac85a; }
-.uk-text-info {
-  color: #03a9f4; }
+.uk-text-muted {
+  color: #999999; }
 .uk-text-warning {
-  color: #FF8833; }
+  color: #aae090; }
 .uk-text-danger {
   color: #ca1f1f; }
+
+.uk-badge-primary {
+  background-color: #6478c8;
+  color: #000000; }
+  .uk-badge-primary:hover {
+    background-color: #8a99d5; }
+  .uk-badge-primary:active {
+    background-color: #4159b8; }
+.uk-badge-success {
+  background-color: #fac85a;
+  color: #000000; }
+  .uk-badge-success:hover {
+    background-color: #fcd98c; }
+  .uk-badge-success:active {
+    background-color: #f9b829; }
+.uk-badge-muted {
+  background-color: #999999;
+  color: #000000; }
+  .uk-badge-muted:hover {
+    background-color: #b3b3b3; }
+  .uk-badge-muted:active {
+    background-color: gray; }
+.uk-badge-warning {
+  background-color: #aae090;
+  color: #000000; }
+  .uk-badge-warning:hover {
+    background-color: #c9ebb8; }
+  .uk-badge-warning:active {
+    background-color: #8bd568; }
+.uk-badge-danger {
+  background-color: #ca1f1f;
+  color: #000000; }
+  .uk-badge-danger:hover {
+    background-color: #e13b3b; }
+  .uk-badge-danger:active {
+    background-color: #9e1818; }
+.uk-badge-primary {
+  color: #fff; }
+.uk-badge i {
+  display: block; }
+
+.uk-tab {
+  border: none; }
+  .uk-tab > li {
+    margin-right: 8.3%;
+    position: relative; }
+    .uk-tab > li:hover {
+      background-color: transparent; }
+    .uk-tab > li.uk-active > a {
+      color: #000000; }
+      .uk-tab > li.uk-active > a:after {
+        opacity: 1; }
+    .uk-tab > li > a {
+      color: #000000;
+      font-family: "Muller Medium";
+      font-size: 28px;
+      border: none !important;
+      padding: 0 0 19px; }
+      .uk-tab > li > a:after {
+        content: '';
+        display: block;
+        height: 4px;
+        background-color: #ca1f1f;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        opacity: 0; }
+      .uk-tab > li > a:hover {
+        background-color: transparent; }
 
 .column {
   -moz-columns: 300px 3;
@@ -509,6 +589,14 @@ a:hover {
 .uk-container {
   max-width: 1406px; }
 
+.section__title {
+  color: #ca1f1f;
+  font-family: "Muller Black";
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+  line-height: 1.3; }
+
 .first__screen {
   background: url('../img/f-bg.jpg?1492802325') center no-repeat;
   background-size: cover; }
@@ -573,6 +661,134 @@ a:hover {
     margin-bottom: 10px; }
   .sofas__top .uk-container {
     padding: 4% 0 3.1%; }
+.sofas__list {
+  margin: 6.5% 0; }
+.sofas__grid {
+  margin-top: 56px;
+  margin-left: -20px; }
+  .sofas__grid_wrapp {
+    padding-left: 20px;
+    margin-bottom: 35px; }
+  .sofas__grid_item {
+    z-index: 1;
+    position: relative;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-sizing: content-box; }
+    .sofas__grid_item:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      margin: -20px;
+      padding: 20px;
+      z-index: 2; }
+      .sofas__grid_item:hover .sofas__grid_description {
+        position: absolute;
+        left: 0;
+        padding: 0 20px 20px;
+        height: auto;
+        z-index: 3;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        overflow: inherit; }
+        .sofas__grid_item:hover .sofas__grid_description:before {
+          content: '';
+          left: 0; }
+  .sofas__grid_img {
+    position: relative;
+    padding-bottom: 107.6%;
+    overflow: hidden; }
+    .sofas__grid_img img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute; }
+    .sofas__grid_img .uk-badge {
+      font-family: "Muller Medium";
+      font-size: 12px;
+      padding: 10px;
+      position: absolute;
+      right: 0; }
+      .sofas__grid_img .uk-badge + .uk-badge {
+        margin-right: 80px; }
+      .sofas__grid_img .uk-badge i {
+        height: 24px;
+        margin-bottom: 6px; }
+  .sofas__grid_description {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff; }
+    .sofas__grid_description:before {
+      content: '';
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      position: absolute;
+      width: 100%;
+      height: 16px;
+      top: -16px;
+      background-color: #fff;
+      display: block; }
+  .sofas__grid_name {
+    font-family: "Muller Bold";
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 1px; }
+  .sofas__grid_sub {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 6px; }
+  .sofas__grid_price {
+    color: #ca1f1f;
+    font-family: "Muller Bold";
+    font-size: 28px;
+    margin-bottom: 17px; }
+    .sofas__grid_price_old {
+      font-family: "Muller Regular";
+      font-size: 16px;
+      text-decoration: line-through;
+      color: #999999;
+      margin-right: 10px; }
+  .sofas__grid_color {
+    color: #808080;
+    font-family: "Muller Regular";
+    font-size: 12px;
+    margin-bottom: 22px; }
+    .sofas__grid_color_item {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      margin-right: 8px; }
+    .sofas__grid_color_title {
+      margin-bottom: 8px; }
+  .sofas__grid_size {
+    margin-bottom: 14px; }
+    .sofas__grid_size_item {
+      font-size: 14px; }
+    .sofas__grid_size_name {
+      color: #808080;
+      font-size: 12px; }
+  .sofas__grid .uk-button-success {
+    width: 100%;
+    font-size: 21px;
+    padding: 14px;
+    margin-top: 10px; }
+
+.uk-badge {
+  padding: 5px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
 
 /* Footer
  ----------------------------------------------------------------------------- */
