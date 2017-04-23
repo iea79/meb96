@@ -38,4 +38,16 @@ $(document).ready(function() {
     // });
 	// });
 
+	$('.reccomend__more').on('click', function(event) {
+		event.preventDefault();
+		var text = $(this).find('span');
+		$(this).toggleClass('open');
+		$('.reccomend__text').toggleClass('open');
+		if ($(this).hasClass('open')) {
+			text.html('Закрыть');
+		} else {
+			text.html('Читать полностью');
+		}
+	});
+
 });
