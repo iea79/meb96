@@ -8,50 +8,887 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link href="css/uikit.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/fullPage.css" rel="stylesheet" type="text/css" />
+	<link href="css/components/tooltip.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/uikit.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/components/tooltip.min.js"></script>
 	<script type="text/javascript" src="js/function.js"></script>
 
 </head>
 
 <body>
 
-	<div class="fullpage">
+	<!-- begin first__screen -->
+	<section id="firstPage" class="first__screen">
 
-		<!-- begin first__screen -->
-		<section id="firstPage" class="first__screen">
+		<nav class="uk-navbar">
+		    <a href="#firstPage" class="uk-navbar-brand"><img src="img/logo.png" alt=""/></a>
+		    <div class="uk-navbar-flip">
+		    	<a href="tel:8-800-777-32-29" class="uk-navbar-tel">8-800-777-32-29</a>
+		    	<a href="#" class="uk-button uk-button-success">Заказать звонок</a>
+		    </div>
+		    <a href="" class="uk-navbar-toggle uk-visible-small"></a>
+		    <ul id="menu" class="uk-navbar-nav uk-navbar-center">
+		    	<li><a href="#sofas">Диваны</a></li>
+		    	<li><a href="#">Материалы</a></li>
+		    	<li><a href="#">Доставка</a></li>
+		    	<li><a href="#">Как получить</a></li>
+		    	<li><a href="#">Отзывы</a></li>
+		    	<li><a href="#">Контакты</a></li>
+		    </ul>
+		</nav>
+			
+		<div class="uk-container uk-container-center">
+			
+			<h1>Самая мягкая мебель по самой выгодной цене <span class="uk-text-success">*</span></h1>
 
-			<nav class="uk-navbar">
-			    <a href="#firstPage" class="uk-navbar-brand"><img src="img/logo.png" alt=""/></a>
-			    <div class="uk-navbar-flip">
-			    	<a href="tel:8-800-777-32-29" class="uk-navbar-tel">8-800-777-32-29</a>
-			    	<a href="#" class="uk-button uk-button-success">Заказать звонок</a>
-			    </div>
-			    <a href="" class="uk-navbar-toggle uk-visible-small"></a>
-			    <ul id="menu" class="uk-navbar-nav uk-navbar-center">
-			    	<li><a href="#sofas">Диваны</a></li>
-			    	<li><a href="#">Материалы</a></li>
-			    	<li><a href="#">Доставка</a></li>
-			    	<li><a href="#">Как получить</a></li>
-			    	<li><a href="#">Отзывы</a></li>
-			    	<li><a href="#">Контакты</a></li>
-			    </ul>
-			</nav>
+			<a href="#" class="uk-button uk-button-danger">Посмотреть модели <i class="uk-icon-angle-right"></i></a>
+
+			<div class="first__screen_sub"><span class="uk-text-success">*</span> для самых дорогих клиентов</div>
+
+		</div>
+
+		<div class="soc">
+			<a href="#" class="icon-facebook"></a>
+			<a href="#" class="icon-vk"></a>
+			<a href="#" class="icon-insta"></a>
+		</div>
+
+	</section>
+	<!-- end first__screen -->
+
+	<!-- begin sofas -->
+	<section id="sofas" class="sofas">
+
+		<div class="sofas__top">
+
+			<div class="uk-container uk-container-center">			
+
+				<div class="uk-grid uk-grid-width-1-2">
+					<div class="sofas__top_item">
+						<div class="sofas__top_img">
+							<img src="img/infogr1.png" alt=""/>
+						</div>
+						<div class="sofas__top_text">
+							<div class="sofas__top_name">Высокое качество</div>
+							Ткань выдерживает <b>10 000</b> циклов на истирание
+						</div>
+					</div>
+					<div class="sofas__top_item">
+						<div class="sofas__top_img">
+							<img src="img/infogr2.png" alt=""/>
+						</div>
+						<div class="sofas__top_text">
+							<div class="sofas__top_name">Надежность</div>
+							Мы не спорим, а обслуживаем по гарантии
+						</div>
+					</div>
+					<div class="sofas__top_item">
+						<div class="sofas__top_img">
+							<img src="img/infogr3.png" alt=""/>
+						</div>
+						<div class="sofas__top_text">
+							<div class="sofas__top_name">Большой выбор</div>
+							Кожа и жаккард: <b>24</b> цветовых варианта без доплат
+						</div>
+					</div>
+					<div class="sofas__top_item">
+						<div class="sofas__top_img">
+							<img src="img/infogr4.png" alt=""/>
+						</div>
+						<div class="sofas__top_text">
+							<div class="sofas__top_name">Недорогая доставка</div>
+							Подъем на любой этаж (с лифтом) всего за <b>300 руб</b>.
+						</div>
+					</div>
+				</div>
 				
-			<div class="uk-container uk-container-center">
+			</div>
+			
+		</div>
+		
+		<div class="uk-container uk-container-center">
+			
+			<div class="sofas__list">
 				
-				<h1>Самая мягкая мебель по самой выгодной цене <span class="uk-text-success">*</span></h1>
+				<h2 class="section__title">более 20 моделей диванов</h2>
 
-				<a href="#" class="uk-button uk-button-danger">Посмотреть модели <i class="uk-icon-angle-right"></i></a>
+				<ul class="uk-tab" data-uk-switcher="{connect:'#sofa-tabs'}">
+				    <li><a href="">Максимальная выгода</a></li>
+				    <li><a href="">Самые стильные и яркие</a></li>
+				</ul>
 
-				<div class="first__screen_sub"><span class="uk-text-success">*</span> для самых дорогих клиентов</div>
+				<ul id="sofa-tabs" class="uk-switcher">
+				    <li>
+				    	<div class="uk-grid uk-grid-small uk-grid-width-1-4 sofas__grid">
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img">
+					    				<img src="img/sofa5.jpg" alt="">
+					    				<div class="uk-badge uk-badge-success">
+					    					<i class="icon-star-o"></i>
+					    					ХИТ
+					    				</div>
+					    			</div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img">
+					    				<img src="img/sofa5.jpg" alt="">
+					    				<div class="uk-badge uk-badge-primary">
+					    					<i class="icon-percent-o"></i>
+					    					20 %
+					    				</div>
+					    				<div class="uk-badge uk-badge-warning">
+					    					<i class="icon-cargo"></i>
+					    					1 день
+					    				</div>
+					    			</div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img"><img src="img/sofa3.jpg" alt=""></div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img"><img src="img/sofa4.jpg" alt=""></div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img"><img src="img/sofa5.jpg" alt=""></div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img"><img src="img/sofa2.jpg" alt=""></div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img"><img src="img/sofa3.jpg" alt=""></div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    		<!-- 1 -->
+				    		<div class="sofas__grid_wrapp">				    			
+					    		<div class="sofas__grid_item">
+					    			<div class="sofas__grid_img"><img src="img/sofa4.jpg" alt=""></div>
+					    			<div class="sofas__grid_description">
+					    				<div class="sofas__grid_name">KIWI 1</div>
+					    				<div class="sofas__grid_sub">Сэндвич</div>
+					    				<div class="sofas__grid_price">
+					    					<span class="sofas__grid_price_old">13 400 Р  </span>
+					    					10 900 Р
+					    				</div>
+					    				<div class="sofas__grid_color">
+						    				<div class="sofas__grid_color_title">Цветовые решения</div>
+					    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
+					    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
+					    				</div>
+					    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Спальное место:</div>
+					    						1900х1400 мм
+					    					</div>
+					    					<div class="sofas__grid_size_item">
+					    						<div class="sofas__grid_size_name">Размеры:</div>
+					    						1920х850х880 мм
+					    					</div>
+					    				</div>
+					    				<div class="uk-button uk-button-success">Посмотреть товар</div>
+					    			</div>
+					    		</div>
+				    		</div>
+				    	</div>
+				    </li>
+				</ul>
 
 			</div>
+
+			<div class="promo">
+
+				<!-- left -->
+				<div class="uk-grid uk-grid-width-1-3">
+					<div class="promo_col">
+						<div class="uk-panel uk-panel-box uk-panel-box-secodary">
+							<div class="promo_badge">Экоматериал</div>
+                            <h3 class="uk-panel-title">Holofiber</h3>
+                            Не впитывает влагу и запахи аналог натурального пуха
+                        </div>
+						<div class="uk-panel uk-panel-box uk-panel-box-primary">
+							<div class="promo_badge">Экоматериал</div>
+                            <h3 class="uk-panel-title">Фанера и брус</h3>
+                            Выдерживает большие нагрузки влагостойкий и прочный
+                        </div>
+                        <p>Стильный, яркий, практичный, удобный диван для ежедневного сна с ровным спальным местом, оригинальнымиподушками и коробом ЛДСП.</p>
+                        <ul>
+                        	<li>3 декоративные подушки в комплекте</li>
+                        	<li>Короб для белья</li>
+                        	<li>Съемные подлокотники</li>
+                        	<li>Собирается на любую сторону</li>
+                        </ul>
+					</div>
+
+					<!-- center -->
+					<div class="promo_col">
+						<div class="promo__title">SHERRY</div>
+						<div class="promo__subtitle">Стильный и яркий</div>
+						<div class="promo_img">
+							<div class="promo__tooltip" data-uk-tooltip title="Можно ставить вплотную к стенке"></div>
+							<div class="promo__tooltip" data-uk-tooltip title="Можно ставить вплотную к стенке"></div>
+							<div class="promo__tooltip" data-uk-tooltip title="Можно ставить вплотную к стенке"></div>
+							<div class="promo__tooltip" data-uk-tooltip title="Можно ставить вплотную к стенке"></div>
+							<div class="promo__tooltip" data-uk-tooltip title="Можно ставить вплотную к стенке"></div>
+							<img src="img/promo.png" alt=""/>
+						</div>
+					</div>
+
+					<!-- right -->
+					<div class="promo_col">
+						<div class="uk-panel uk-panel-box">
+                            <h3 class="uk-panel-title">Стальные пружины «Змейка»</h3>
+                            Ортопедический эффект <br>
+                            Комфортный сон
+                        </div>
+						<div class="uk-panel uk-panel-box uk-panel-box-secodary">
+							<div class="promo_badge">Экоматериал</div>
+                            <h3 class="uk-panel-title">Flexform</h3>
+                            Восстанавливает форму антиаллергенный
+                        </div>
+                        <dl class="uk-description-list">
+	                        <dt>Длина:</dt>
+	                        <dd>1930 мм</dd>
+
+	                        <dt>Глубина:</dt>
+	                        <dd>940 мм</dd>
+
+	                        <dt>Высота спинки: </dt>
+	                        <dd>820 мм</dd>
+
+	                        <dt>Наполнитель:</dt>
+	                        <dd>высокоэластичный ППУ</dd>
+
+	                        <dt>Механизм трансформации: </dt>
+	                        <dd>еврокнижка</dd>
+
+	                        <dt>Материал обивки: </dt>
+	                        <dd>мебельная ткань</dd>
+
+	                        <dt>Спальное место:</dt>
+	                        <dd>1920х1350 мм</dd>
+	                    </dl>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="promo_total">
+				<div class="promo_left">
+					<div class="promo_price_old">13 400 Р</div>
+					13 650 Р
+				</div>
+				<div class="promo_right">
+					<div class="promo_option">С подлокотниками <span>+ 1 500 Р</span></div>
+					<button class="uk-button uk-button-danger">Заказать</button>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- end sofas -->
+
+	<!-- begin  -->
+	<section id="first__form" class="form__line">
+		<div class="uk-form">
+			<i class="form__icon"></i>
+			<h2 class="form__line_title">Понравился диван?</h2>
+			<div class="form__line_subtitle">оставьте заявку, и мы свяжемся с вами в течение 10 минут</div>
+			<div class="uk-grid uk-grid-medium uk-grid-width-1-2">
+				<div class="uk-form-field">
+					<label>Ваше имя</label>
+					<input type="text">
+				</div>
+				<div class="uk-form-field">
+					<label>Ваш E-mail</label>
+					<input type="text">
+				</div>
+				<div class="uk-form-field">
+					<label>Ваш телефон</label>
+					<input type="text">
+				</div>
+				<div class="uk-form-field">
+					<label>Название товара</label>
+					<select>
+						<option>диван KIWI 1</option>
+						<option>диван KIWI 1</option>
+						<option>диван KIWI 1</option>
+					</select>
+				</div>
+			</div>
+			<div class="uk-button uk-button-success uk-width-1-1">Отправить</div>
+		</div>
+	</section>
+	<!-- end  -->
+
+	<!-- begin materials -->
+	<section id="materials" class="materials">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">Любой цвет и материал без доплат</h2>
+			<h3 class="section__subtitle">Мы готовы использовать любой из 24 цветов для отделки вашего дивана за свой счет. Выбирайте любой оттенок. Никаких доплат!</h3>
+
+			<ul class="uk-tab" data-uk-switcher="{connect:'#materials-tabs'}">
+			    <li><a href="">Жаккард, полиэстер: Коллекция NEO</a></li>
+			    <li><a href="">Искусственная кожа: Коллекция SUNNY</a></li>
+			</ul>
+
+			<ul id="materials-tabs" class="uk-switcher">
+				<li>
+					<div class="materials__description">
+						Состоит из хлопка и синтетических волокон. Жаккардовую ткань традиционно используют для обивки дорогой мягкой мебели, так как именно она позволяет создавать сложные рельефные рисунки. При этом жаккард достаточно прост в уходе и обладает водоотталкивающими свойствами.
+					</div>
+					<div class="materials__box uk-grid uk-grid-width-1-4">
+						<div class="uk-panel">
+							<img src="img/matt1.png" alt=""/>
+							<div class="materials__name">NeoCream</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt2.png" alt=""/>
+							<div class="materials__name">NeoLatte</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt3.png" alt=""/>
+							<div class="materials__name uk-text-contrast">NeoBrown</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt4.png" alt=""/>
+							<div class="materials__name uk-text-contrast">NeoChocolate</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt5.png" alt=""/>
+							<div class="materials__name uk-text-contrast">NeoAsh</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt6.png" alt=""/>
+							<div class="materials__name">NeoCream</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt7.png" alt=""/>
+							<div class="materials__name">NeoLatte</div>
+						</div>
+						<div class="uk-panel">
+							<img src="img/matt8.png" alt=""/>
+							<div class="materials__name uk-text-contrast">NeoBrown</div>
+						</div>
+					</div>
+				</li>
+				<li></li>
+			</ul>
+
+		</div>
+	</section>
+	<!-- end materials -->
+
+	<!-- begin used -->
+	<section id="used" class="used">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">возможности использования</h2>
+			<div class="uk-grid uk-grid-small uk-grid-width-1-3">
+				<div class="used__item">
+					<div class="used__name">Домашний кинотеатр</div>
+					<img src="img/used1.jpg" alt="">
+				</div>
+				<div class="used__item">
+					<div class="used__name">Комфортно лежать</div>
+					<img src="img/used2.jpg" alt="">
+				</div>
+				<div class="used__item">
+					<div class="used__name">Застолье на 8 человек</div>
+					<img src="img/used3.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end used -->
+
+	<!-- begin form__line -->
+	<section id="form__line" class="form__line">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title"></h2>
+		</div>
+	</section>
+	<!-- end form__line -->
+	
+	<!-- begin reccomend -->
+	<section id="reccomend" class="reccomend">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">Рекомендации по уходу</h2>
+			<div class="reccomend__text column">
+				<p>Внешний вид много значит в нашей жизни, это касается и эстетического облика мягкой мебели. Поэтому при выборе дивана для своего жилья люди в первую очередь ориентируются на его <a href="#" class="uk-text-danger">расцветку, фактуру материала и другие визуальные параметры</a>. Но важно понимать, что обивка – это не только то, что формирует первое впечатление. От её качества зависит то, сколько прослужит диван, купить новый будет дороже, чем изначально позаботиться о долговечности. В особенности это касается офисной и ресторанной мебели, поскольку ею каждодневно пользуется масса людей.</p>
+		
+				<p>При покупке внимательно осмотрите изделие, обратите внимание на сам материал. Следует проконсультироваться с работником магазина по поводу состава ткани, ведь от этого зависит дальнейший срок эксплуатации дивана. К тому же, каждый материал требует своего ухода, специальные средства применяются в зависимости от типа ткани. Потрогайте обивку, на ощупь поверхности также могут отличаться, не все одинаково приятны. Шёлковые драпировки гладкие, они кажутся прохладными, льняные и хлопковые легко сминаются. Ворс от бархата или плюша может создать проблему при чистке пылесосом, со временем такая обивка может полысеть. Чтобы учесть все нюансы, не стесняйтесь расспрашивать продавцов.</p>
+
+			</div>
+
+			<a class="reccomend__more">Читать полностью <i class="uk-icon-angle-down"></i></a>
+		</div>
+	</section>
+	<!-- end reccomend -->
+	
+	<!-- begin gift -->
+	<section id="gift" class="gift">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">при покупке любого дивана мы дарим скидку <span class="uk-text-danger">20%</span> на:</h2>
+		</div>
+	</section>
+	<!-- end gift -->
+	
+	<!-- begin how__work -->
+	<section id="how__work" class="how__work">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">Как получить диван</h2>
+			<ol class="uk-grid uk-grid-width-1-3 uk-text-center how__work_grid">
+				<!-- 1 -->
+				<li class="how__work_item">
+					<div class="how__work_point">Оставьте заявку</div>
+					<img src="img/how1.png" alt=""/>
+					<div class="how__work_name"></div>
+					Мы позвоним вам и уточним детали
+				</li>
+				<!-- 2 -->
+				<li class="how__work_item ">
+					<div class="how__work_point"></div>
+					<img src="img/how2.png" alt=""/>
+					<div class="how__work_name">Ожидайте диван</div>
+					Изготовим и привезем нужную модель в течение 2-5 дней
+				</li>
+				<!-- 3 -->
+				<li class="how__work_item ">
+					<div class="how__work_point"></div>
+					<img src="img/how3.png" alt=""/>
+					<div class="how__work_name">Оплата при получении</div>
+					Наличная или безналичная оплата после получения товара
+				</li>
+			</ol>
+			<a href="#" class="uk-button uk-button-danger">Оставить заявку</a>
+		</div>
+	</section>
+	<!-- end how__work -->
+	
+	<!-- begin delivery -->
+	<section id="delivery" class="delivery">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">Доставка по Екатеринбургу</h2>
+			<div class="delivery__grid uk-grid uk-grid-width-1-2">
+				<div class="delivery__item">
+					<!-- 1 -->
+					<div class="delivery__row">
+						<div class="delivery__img">
+							<img src="img/deli1.png" alt=""/>
+						</div>
+						<div class="delivery__descr">
+							<div class="delivery__title">Средняя цена по городу</div>
+							<ul class="uk-list delivery__list">
+								<li>Газель - <b>350 руб.</b> <span class="uk-text-muted">* 2 часа</span></li>
+								<li>Грузчики - <b>200 руб.</b> <span class="uk-text-muted">* 2 часа</span></li>
+								<li>Итого - <b>1 100 руб.</b></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="delivery__row">
+						<div class="delivery__img">
+							<img src="img/deli1.png" alt=""/>
+						</div>
+						<div class="delivery__descr">
+							<div class="delivery__title">Специальная цена от Меб96</div>
+							<ul class="uk-list delivery__list">
+								<li>Всего - <b>500 руб.</b></li>
+								<li>Подъем на любой этаж (с лифтом) - <b>300 руб.</b></li>
+								<li>Самовывоз из офиса - <b>бесплатно</b></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="delivery__item">
+					<div class="uk-form delivery__form">
+						<div class="delivery__form_title"></div>
+						<input type="text" placeholder="Введите ваше имя">
+						<input type="text" placeholder="Введите ваш номер телефона">
+						<button class="uk-button uk-button-warning">Заказать</button>
+					</div>
+					<div class="delivery__form_sub">
+						Или позвоните по телефону <a href="tel:8-800-777-32-29">8-800-777-32-29</a> <br>
+						Звонок бесплатный по России 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end delivery -->
+	
+	<!-- begin reason -->
+	<section id="reason" class="reason">
+		<div class="uk-container uk-container-center">
+			<h2 class="reason__title">Все ещё думаете?</h2>
+			<div class="reason__wrapp">
+				<!-- 1 -->
+				<div class="reason__item">
+					<div class="reason__img">
+						<img src="img/reason1.png" alt=""/>
+					</div>
+					<div class="reason__text">
+						<div class="reason__name">Дарим 10 000 рублей</div>
+						Скидка 20% на покупку окон ПВХ каждому нашему клиенту
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="reason__item">
+					<div class="reason__img">
+						<img src="img/reason1.png" alt=""/>
+					</div>
+					<div class="reason__text">
+						<div class="reason__name">Гарантия 18 месяцев</div>
+						Если что-то будет не так, то мы приедем и поменяем вам диван
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="reason__item">
+					<div class="reason__img">
+						<img src="img/reason1.png" alt=""/>
+					</div>
+					<div class="reason__text">
+						<div class="reason__name">Приятный сюрприз</div>
+						Скидка 5% на подарок вашему ребенку в BabyPlanet.pro
+					</div>
+				</div>
+				<!-- 4 -->
+				<div class="reason__item">
+					<div class="reason__img">
+						<img src="img/reason1.png" alt=""/>
+					</div>
+					<div class="reason__text">
+						<div class="reason__name">Вежливые люди</div>
+						Свяжитесь с нами, и мы подберем вам уютный диван как в свой дом
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end reason -->
+	
+	<!-- begin review -->
+	<section id="review" class="review">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">Отзывы</h2>
+			<!-- begin Slider review__slider -->
+			<div class="review__slider">
+				<div class="review__slider_item">
+					<img src="img/rev1.png" alt=""/>
+					<div class="review__rate">Оценка: 5 из 5</div>
+					Заказывали детский диван "Губка боб". Заказали через интернет, не смогли устоять - очень он милый на фото. Привез курьер, расчет наличными при получении после осмотра. Это Чудо!! )) Очень яркий и красивый. Нигде таких больше не видела. Соответствует описанию и фото на сайте. Механизм раскладывания плавный.
+					<div class="review__date">07 февраля в 19:05</div>
+				</div>
+				<div class="review__slider_item">
+					<img src="img/rev1.png" alt=""/>
+					<div class="review__rate">Оценка: 5 из 5</div>
+					Заказывали детский диван "Губка боб". Заказали через интернет, не смогли устоять - очень он милый на фото. Привез курьер, расчет наличными при получении после осмотра. Это Чудо!! )) Очень яркий и красивый. Нигде таких больше не видела. Соответствует описанию и фото на сайте. Механизм раскладывания плавный.
+					<div class="review__date">07 февраля в 19:05</div>
+				</div>
+			</div>
+			<!-- end Slider review__slider -->
+		</div>
+	</section>
+	<!-- end review -->
+	
+	<!-- begin question -->
+	<section id="question" class="question">
+		<div class="uk-container uk-container-center">
+			<h2 class="section__title">часто задаваемые вопросы</h2>
+			<ul class="uk-nav uk-nav-parent-icon" data-uk-nav="{multiple:true}">
+			    <li class="uk-parent">
+			        <a href="#">Почему так дорого, я нашел дешевле?</a>
+			        <ul class="uk-nav-sub">
+			            <li>
+			            	В дешевых диванах часто используются:
+							- Не износостойкие ткани
+							- Не экологически чистые материалы, порой опасные для здоровья
+							- Не надежные механизмы и фурнитура
+
+							Мы не можем позволить себе использовать такие материалы. Репутация компании важней, чем разовая прибыль.
+			            </li>
+			        </ul>
+			    </li>
+			    <li class="uk-parent">
+			        <a href="#">Почему так дешево?</a>
+			        <ul class="uk-nav-sub">
+			            <li>
+			            	В дешевых диванах часто используются:
+							- Не износостойкие ткани
+							- Не экологически чистые материалы, порой опасные для здоровья
+							- Не надежные механизмы и фурнитура
+
+							Мы не можем позволить себе использовать такие материалы. Репутация компании важней, чем разовая прибыль.
+			            </li>
+			        </ul>
+			    </li>
+			    <li class="uk-parent">
+			        <a href="#">На флампе отзывы не только о диванах, вы еще что-то продаете?</a>
+			        <ul class="uk-nav-sub">
+			            <li>
+			            	В дешевых диванах часто используются:
+							- Не износостойкие ткани
+							- Не экологически чистые материалы, порой опасные для здоровья
+							- Не надежные механизмы и фурнитура
+
+							Мы не можем позволить себе использовать такие материалы. Репутация компании важней, чем разовая прибыль.
+			            </li>
+			        </ul>
+			    </li>
+			    <li class="uk-parent">
+			        <a href="#">Вы доставляете диваны только по Екатеринбургу?</a>
+			        <ul class="uk-nav-sub">
+			            <li>
+			            	В дешевых диванах часто используются:
+							- Не износостойкие ткани
+							- Не экологически чистые материалы, порой опасные для здоровья
+							- Не надежные механизмы и фурнитура
+
+							Мы не можем позволить себе использовать такие материалы. Репутация компании важней, чем разовая прибыль.
+			            </li>
+			        </ul>
+			    </li>
+			</ul>
+		</div>
+	</section>
+	<!-- end question -->
+
+	<!-- begin contact -->
+	<section id="contact" class="contact">
+		<div class="contact__wrapp">
+			<h2 class="section__title">Контакты</h2>
+			<dl class="uk-description-list contact__list">
+				<dt>Телефон:</dt>
+				<dl>sales@meb96.ru</dl>
+
+				<dt>E-mail:</dt>
+				<dl>меб96.рф</dl>
+
+				<dt>Сайт:</dt>
+				<dl></dl>
+
+				<dt>График доставки:</dt>
+				<dl>Пн-Пт - 09:00-20:00 <br>
+				Сб - 11:00-17:00 <br>
+				Вс - выходной</dl>
+			</dl>
 
 			<div class="soc">
 				<a href="#" class="icon-facebook"></a>
@@ -59,373 +896,22 @@
 				<a href="#" class="icon-insta"></a>
 			</div>
 
-		</section>
-		<!-- end first__screen -->
-
-		<!-- begin sofas -->
-		<section id="sofas" class="sofas">
-
-			<div class="sofas__top">
-
-				<div class="uk-container uk-container-center">			
-
-					<div class="uk-grid uk-grid-width-1-2">
-						<div class="sofas__top_item">
-							<div class="sofas__top_img">
-								<img src="img/infogr1.png" alt=""/>
-							</div>
-							<div class="sofas__top_text">
-								<div class="sofas__top_name">Высокое качество</div>
-								Ткань выдерживает <b>10 000</b> циклов на истирание
-							</div>
-						</div>
-						<div class="sofas__top_item">
-							<div class="sofas__top_img">
-								<img src="img/infogr2.png" alt=""/>
-							</div>
-							<div class="sofas__top_text">
-								<div class="sofas__top_name">Надежность</div>
-								Мы не спорим, а обслуживаем по гарантии
-							</div>
-						</div>
-						<div class="sofas__top_item">
-							<div class="sofas__top_img">
-								<img src="img/infogr3.png" alt=""/>
-							</div>
-							<div class="sofas__top_text">
-								<div class="sofas__top_name">Большой выбор</div>
-								Кожа и жаккард: <b>24</b> цветовых варианта без доплат
-							</div>
-						</div>
-						<div class="sofas__top_item">
-							<div class="sofas__top_img">
-								<img src="img/infogr4.png" alt=""/>
-							</div>
-							<div class="sofas__top_text">
-								<div class="sofas__top_name">Недорогая доставка</div>
-								Подъем на любой этаж (с лифтом) всего за <b>300 руб</b>.
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				
-			</div>
-			
-			<div class="uk-container uk-container-center">
-				
-				<div class="sofas__list">
-					
-					<h2 class="section__title">более 20 моделей диванов</h2>
-
-					<ul class="uk-tab" data-uk-switcher="{connect:'#sofa-tabs'}">
-					    <li><a href="">Максимальная выгода</a></li>
-					    <li><a href="">Самые стильные и яркие</a></li>
-					</ul>
-
-					<ul id="sofa-tabs" class="uk-switcher">
-					    <li>
-					    	<div class="uk-grid uk-grid-small uk-grid-width-1-4 sofas__grid">
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img">
-						    				<img src="img/sofa5.jpg" alt="">
-						    				<div class="uk-badge uk-badge-success">
-						    					<i class="icon-star-o"></i>
-						    					ХИТ
-						    				</div>
-						    			</div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img">
-						    				<img src="img/sofa5.jpg" alt="">
-						    				<div class="uk-badge uk-badge-primary">
-						    					<i class="icon-percent-o"></i>
-						    					20 %
-						    				</div>
-						    				<div class="uk-badge uk-badge-warning">
-						    					<i class="icon-cargo"></i>
-						    					1 день
-						    				</div>
-						    			</div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img"><img src="img/sofa3.jpg" alt=""></div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img"><img src="img/sofa4.jpg" alt=""></div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img"><img src="img/sofa5.jpg" alt=""></div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img"><img src="img/sofa2.jpg" alt=""></div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img"><img src="img/sofa3.jpg" alt=""></div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color3.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    		<!-- 1 -->
-					    		<div class="sofas__grid_wrapp">				    			
-						    		<div class="sofas__grid_item">
-						    			<div class="sofas__grid_img"><img src="img/sofa4.jpg" alt=""></div>
-						    			<div class="sofas__grid_description">
-						    				<div class="sofas__grid_name">KIWI 1</div>
-						    				<div class="sofas__grid_sub">Сэндвич</div>
-						    				<div class="sofas__grid_price">
-						    					<span class="sofas__grid_price_old">13 400 Р  </span>
-						    					10 900 Р
-						    				</div>
-						    				<div class="sofas__grid_color">
-							    				<div class="sofas__grid_color_title">Цветовые решения</div>
-						    					<div class="sofas__grid_color_item"><img src="img/color1.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color2.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color4.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color5.png" alt=""></div>
-						    					<div class="sofas__grid_color_item"><img src="img/color6.png" alt=""></div>
-						    				</div>
-						    				<div class="sofas__grid_size uk-grid uk-grid-width-1-2">
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Спальное место:</div>
-						    						1900х1400 мм
-						    					</div>
-						    					<div class="sofas__grid_size_item">
-						    						<div class="sofas__grid_size_name">Размеры:</div>
-						    						1920х850х880 мм
-						    					</div>
-						    				</div>
-						    				<div class="uk-button uk-button-success">Посмотреть товар</div>
-						    			</div>
-						    		</div>
-					    		</div>
-					    	</div>
-					    </li>
-					</ul>
-
-				</div>
-
+			<div class="contact__descr">
+				Всегда рады видеть вас в нашем офисе. <br>
+				Выдача товара осуществляется по адресу: <br>
+				г. Екатеринбург, ул. Крупносортщиков, 14, офис 103
 			</div>
 
-		</section>
-		<!-- end sofas -->
-
-		<!-- begin  -->
-		<section id="" class="">
-			
-		</section>
-		<!-- end  -->
-		
-	</div>
-
+			<div class="copy">
+				© 2017, ООО "Некст". <br>
+				Все права защищены.
+			</div>
+		</div>
+		<div class="contact__map">
+			<img src="img/map.jpg" alt=""/>
+		</div>
+	</section>
+	<!-- end contact -->
+	
 </body>
 </html>
