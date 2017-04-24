@@ -583,19 +583,17 @@ a {
 
 // Social link
 .soc {
-	float: left;
 	a {
 		display: inline-block;
 		text-decoration: none;
+		color: $color-muted;
+		font-size: 21px;
 		@include trs(0.3s);
 		&:hover {
 			opacity: .8;
+			color: $color-danger;
 		}
 	}
-}
-
-.copy {
-	float: right;
 }
 
 /* Header
@@ -1753,7 +1751,7 @@ section {
 
 // Questions ==================================================================
 .question {
-	padding: 6.3% 0;
+	padding: 6.3% 0 5.2%;
 	.uk-container {}
 	.uk-container-center {}
 	.section__title {
@@ -1772,9 +1770,7 @@ section {
 			}
 		}
 		&-parent {
-			&+* {
-				margin-top: 20px;
-			}
+			margin-bottom: 20px;
 			&>a {
 				@include border-radius(5px);
 				@include trs(.3s);
@@ -1802,6 +1798,7 @@ section {
 				}
 			}
 			&.uk-open {
+				margin-bottom: 0;
 				&>a {
 					background-color: $color-success;
 					@include box-shadow(none);
@@ -1817,11 +1814,69 @@ section {
 	}
 }
 
-/* Footer
- ----------------------------------------------------------------------------- */
-.footer {
+// Contacts ==================================================================
+.contact {
+	background-color: #f2f2f2;
 	position: relative;
-	@extend %clear_all;
+	@extend %clear_a;
+	.section__title {
+		color: $color-main;
+		margin-bottom: 59px;
+	}
+	&__wrapp {
+		width: 50%;
+		float: left;
+	}
+	&__container {
+		max-width: 703px;
+		width: 100%;
+		float: right;
+		padding: 16% 35px 16%;
+	}
+	&__map {
+		width: 50%;
+		position: absolute;
+		height: 100%;
+		width: 50%;
+		left: 50%;
+		// background-color: #000;
+		ymaps {
+			// opacity: .8;
+		}
+	}
+	&__list {
+		font-size: 21px;
+		max-width: 440px;
+		dt {
+			font-family: "Muller Bold";
+			width: 45%;
+			color: $color-main;
+		}
+		dl {
+			overflow: hidden;
+			text-align: right;
+			margin-bottom: 25px;
+			a {
+				color: $color-main;
+			}
+		}
+	}
+	&__descr {
+		font-size: 18px;
+		margin-bottom: 46px;
+	}
+	.uk-description-list {}
+	.soc {
+		margin-bottom: 42px;
+		a {
+			font-size: 40px;
+			margin-right: 14px;
+		}
+	}
+	.copy {
+		color: #808080;
+		font-size: 16px;
+	}
 }
 
 /* Responsive styles
