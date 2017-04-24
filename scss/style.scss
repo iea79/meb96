@@ -239,7 +239,8 @@ $el-bg-colors: (
 html,body { 
 	font: 18px $main_font_family;
 	line-height: 1.2;
-	overflow: inherit;
+	overflow: inherit; 
+	color: $color-main;
 }
 
 b, strong {
@@ -391,7 +392,13 @@ b, strong {
 	line-height: 1;
 	@include border-radius(5px);
 	@include trs(0.3s);
+	background-color: #4d4d4d;
+	color: #ffffff;
 	&:hover {
+		background-color: lighten(#4d4d4d, 10%);
+	}
+	&:active {
+		background-color: darken(#4d4d4d, 10%);
 	}
 	@each $status_el, $color_el_bg in $el_bg_colors {
 		&-#{$status_el} {
@@ -840,7 +847,7 @@ section {
 		margin: 6.5% 0 0;
 	}
 	&__grid {
-		margin-top: 56px;
+		margin-top: 55px;
 		margin-left: -20px;
 		&_wrapp {
 			padding-left: 20px;
@@ -1233,6 +1240,7 @@ section {
 		width: 233px;
 		margin-right: 30px;
 		line-height: 1.45;
+		padding-top: 11px;
 	}
 	&__box {
 		overflow: hidden;
@@ -1278,7 +1286,7 @@ section {
 
 }
 
-// Used ==================================================================
+// Used =======================================================================
 .used {
 	margin-bottom: 9.1%;
 	.uk-container {}
@@ -1297,17 +1305,20 @@ section {
 	}
 }
 
-// How work ===================================================================
+// Reccomend ==================================================================
 .reccomend {
-	padding: 5% 0;
+	padding: 6.3% 0 4.6%;
+	background-color: #f2f2f2;
 	.section__title {
 		color: $color-main;
-		margin-bottom: 50px;
+		margin-bottom: 34px;
 	}
 	.reccomend__text {
 		font-size: 18px;
-		line-height: 1.5;
-		max-height: 258px;
+		line-height: 1.7;
+		max-height: 270px;
+		overflow: hidden;
+		max-width: 1336px;
 		&.open {
 			max-height: none;
 		}
@@ -1341,15 +1352,71 @@ section {
 	.uk-icon-angle-down {}
 }
 
-// Gift ===================================================================
+// Gift =======================================================================
+.gift {
+	padding: 7% 0 4%;
+	.uk-container {}
+	.uk-container-center {}
+	.section__title {
+		color: $color-main;
+		padding-left: 122px;
+		position: relative;
+		&:before {
+			content: '';
+			background: image-url('percent-title.svg') no-repeat center center;
+			background-size: contain;
+			display: block;
+			width: 81px;
+			height: 98px;
+			position: absolute;
+			top: 9px;
+			left: 0;
+		}
+	}
+	.uk-text-danger {}
+	.uk-grid {}
+	.uk-grid-small {}
+	.uk-grid-width-1-3 {}
+	.sofas__grid {
+		margin-top: 50px;
+		&_wrapp {}
+		&_item {}
+		&_img {}
+		&_description {
+			height: 75px;
+		}
+		.sofas__grid_name {
+			margin-bottom: 16px;
+			text-transform: inherit;
+		}
+		&_price {}
+		&_price_old {}
+		&_color {
+			color: $color-main;
+			font-size: 14px;
+		}
+		&_color_title {
+			font-size: 12px;
+			color: #808080;
+		}
+		&_size {}
+		&_size_item {}
+		&_size_name {}
+	}
+	.uk-button {}
+	.uk-button-success {}
+}
+
+// How work ===================================================================
 .how__work {
-	padding: 8% 0;
+	padding: 7.4% 0 7%;
 	text-align: center;
 	background-color: $color-success;
 	.uk-container {}
 	.uk-container-center {}
 	.section__title {
 		color: $color-main;
+		margin-bottom: 40px;
 	}
 	.uk-grid {}
 	.uk-grid-width-1-3 {}
@@ -1367,13 +1434,17 @@ section {
 			background-color: $color-danger;
 			width: 66%;
 			left: 18%;
-			top: 99px;
+			top: 90px;
 			z-index: 0;
 		}
 	}
+	img {
+		@include box-shadow(0 10px 28px rgba(0, 0, 0, 0.3));
+		border-radius: 6px;
+	}
 	&_item {
 		font-size: 21px;
-		margin-bottom: 50px;
+		margin-bottom: 48px;
 		&:before {
 			content: '';
 		    content: counter(li);
@@ -1382,7 +1453,7 @@ section {
 		    color: $color-danger;
 			font-family: "Muller Bold";
 			font-size: 38px;
-			margin-bottom: 25px;
+			margin-bottom: 13px;
 		}
 		p {
 			font-size: 21px;
@@ -1397,38 +1468,45 @@ section {
 		background: image-url('how-point.png') no-repeat center center;
 		background-size: contain;
 		margin-bottom: 23px;
-		margin: 0 auto 20px;
+		margin: 0 auto 23px;
 		position: relative;
 	}
 	&_name {
 		font-family: "Muller Bold";
 		font-size: 28px;
-		margin-top: 28px;
-		margin-bottom: 18px;
+		margin-top: 25px;
+		margin-bottom: 5px;
 	}
 	.uk-button {
 		padding: 23px;
 		font-size: 24px;
-		max-width: 280px;
+		max-width: 380px;
 		width: 100%;
+		@include box-shadow(0 10px 28px rgba(0, 0, 0, 0.3));
 	}
 }
 
 // Delivery ===============================================================
 .delivery {
-	padding: 6% 0;
+	padding: 6% 0 6.3%;
 	.uk-container {}
 	.uk-container-center {}
 	.section__title {
 		color: $color-main;
 		text-align: center;
-		margin-bottom: 90px;
+		margin-bottom: 82px;
 	}
 	&__grid {
 
 	}
 	&__item {
-
+		margin-bottom: 30px;
+		&:first-child {
+			width: 55%;
+		}
+		&:last-child {
+			width: 45%;
+		}
 	}
 	&__row {
 		@extend %clear_a;
@@ -1455,8 +1533,9 @@ section {
 	&__form {
 		@include border-radius(10px);
 		background-color: $color-success;
-		padding: 40px;
+		padding: 41px 41px 33px;
 		text-align: center;
+		@include box-shadow(0 10px 28px rgba(0, 0, 0, 0.3));
 		&_title {
 			font-size: 28px;
 			margin-bottom: 45px;
@@ -1469,19 +1548,19 @@ section {
 			}
 		}
 		input[type=text] {
-			padding: 18px 21px;
+			padding: 15px 21px;
 			font-size: 16px;
 			border: 1px solid #b4b4b4;
-			margin-bottom: 20px;
+			margin-bottom: 18px;
 			width: 100%;
 			@include border-radius(5px);
 		}
 		.uk-button {
 			font-size: 18px;
-			padding: 18px;
+			padding: 17px;
 			width: 100%;
-			margin-top: 39px;
-			margin-bottom: 19px;
+			margin-top: 20px;
+			margin-bottom: 16px;
 		}
 	}
 	.uk-grid {}
@@ -1504,43 +1583,33 @@ section {
 // Reason =================================================================
 .reason {
 	background: image-url('reason-bg.jpg') no-repeat center center;
-	padding: 5% 0;
+	padding: 3.5% 0 4.5%;
 	color: #ffffff;
-	.uk-container {}
+	background-size: cover;
+	.uk-container {
+		@extend %clear_all;
+	}
 	.uk-container-center {}
 	&__title {
 		color: #ffffff;
 		border: 2px solid #fff;
-		display: inline-block;
-		margin-top: 20%;
-		padding: 40px 38px;
+		display: block;
+		margin-top: 318px;
+		padding: 36px 26px;
 		font-size: 38px;
+		font-family: "Muller Bold";
 		@include border-radius(5px);
 		position: relative;
-		&:after,&:before {
-			content: '';
-			border-top: 2px solid #fff;
-			border-bottom: 2px solid #fff;
-			display: block;
-			position: absolute;
-		}
-		&:after {
-			top: 42px;
-			height: 20px;
-			width: 67%;
-			right: -67%;
-		}
-		&:before {
-			top: 20px;
-			height: 65px;
-			width: 60%;
-			right: -60%;
-		}
+		width: 31%;
+		float: left;
+		line-height: 1.1;
 	}
 	&__wrapp {
-		max-width: 480px;
-		float: right;
-		margin-right: 5%;
+		margin-top: 22px;
+		overflow: hidden;
+		background: image-url('line.png') no-repeat left center;
+		padding-left: 22.4%;
+		padding-top: 43px;
 	}
 	&__item {
 		@extend %clear_a;
@@ -1548,73 +1617,13 @@ section {
 		font-size: 21px;
 		width: 100%;
 		margin-bottom: 50px;
-		&:first-child {
-			.reason__img {
-				&:before {
-					border-right: none;
-					border-bottom: none;
-					height: 232px;
-					top: 50%;
-					@include border-radius(10px 0 0 0);
-				}
-			}
-		}
-		&:nth-child(2) {
-			.reason__img {
-				&:before {
-					border-right: none;
-					border-bottom: none;
-					height: 89px;
-					width: 120px;
-					left: -114px;
-					top: 50%;
-					@include border-radius(10px 0 0 0);
-				}
-			}
-		}
-		&:nth-child(3) {
-			.reason__img {
-				&:before {
-					border-right: none;
-					border-top: none;
-					height: 52px;
-					width: -120px;
-					left: -114px;
-					bottom: 50%;
-					@include border-radius(0 0 0 10px);
-				}
-			}
-		}
-		&:last-child {
-			.reason__img {
-				&:before {
-					border-right: none;
-					border-top: none;
-					height: 194px;
-					bottom: 50%;
-					@include border-radius(0 0 0 10px);
-				}
-			}
-		}
+		max-width: 500px;
 	}
 	&__img {
 		padding-right: 22px;
 		display: table-cell;
 		width: 137px;
 		position: relative;
-		&:before {
-			content: '';
-			display: block;
-			position: absolute;
-			width: 141px;
-			left: -142px;
-			height: 100%;
-			border: 2px solid #fff;
-		}
-		&:before {
-		}
-		&:after {
-		}
 	}
 	&__text {
 		display: table-cell;
@@ -1625,6 +1634,186 @@ section {
 		font-family: "Muller Bold";
 		font-size: 32px;
 		margin-bottom: 9px;
+	}
+}
+
+// Review =====================================================================
+.review {
+	padding: 5.7% 0 10.9%;
+	.section__title {
+		color: $color-main;
+		text-align: center;
+		margin-bottom: 41px;
+	}
+	&__slider_item {
+		text-align: center;
+		font-family: "Muller Regular Italic";
+		font-size: 18px;
+		padding: 0 40px;
+		&:after,&:before {
+			content: '';
+			background-size: contain;
+			width: 120px;
+			height: 80px;
+			position: absolute;
+			opacity: .2;
+		}
+		&:after {
+			background-image: image-url('quote-bottom.svg');
+			bottom: 4px;
+			left: 57px;
+		}
+		&:before {
+			background-image: image-url('quote-top.svg');
+			top: 73px;
+			right: 60px;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+			@include border-radius(50%);
+			overflow: hidden;
+			display: inline-block;
+			margin-bottom: 19px;
+		}
+		p {
+			display: inline-block;
+			margin: 0;
+			padding: 0 100px;
+		}
+	}
+	&__rate {
+		color: #22b573;
+		font-family: "Muller Bold";
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	&__date {
+		color: #999999;
+		font-size: 12px;
+		margin-top: 68px;
+		margin-bottom: 10px;
+	}
+	.uk {
+		&-container {}
+		&-slider {
+			&-slider-container {}
+		}
+		&-slidenav {
+			position: absolute;
+			top: 51%;
+			&:hover {
+				opacity: .6;
+			}
+			&-previous {
+				left: 40px;
+				&:before {
+					content: image-url('prev.png');
+				}
+			}
+			&-next {
+				right: 40px;
+				&:before {
+					content: image-url('next.png');
+				}
+			}
+		}
+	}
+}
+
+// Form 3 =====================================================================
+.form__line_3 {
+	padding: 4.3% 0 6.3%;
+	background: image-url('form_3.jpg') no-repeat center center;
+	background-size: cover;
+	.uk-container {}
+	.uk-container-center {}
+	.section__title {
+		text-align: center;
+		margin-bottom: 38px;
+	}
+	.uk-text-contrast {}
+	.uk-grid {}
+	input[type=text] {
+		font-size: 16px;
+		padding: 14px;
+		width: 100%;
+		border: none;
+		border: 1px solid #b4b4b4;
+		@include border-radius(6px);
+		@include box-shadow(0 10px 28px rgba(0, 0, 0, 0.3));
+	}
+	.uk-button {
+		width: 100%;
+		font-size: 18px;
+		padding: 16px;
+		@include box-shadow(0 10px 28px rgba(0, 0, 0, 0.3));
+	}
+}
+
+// Questions ==================================================================
+.question {
+	padding: 6.3% 0;
+	.uk-container {}
+	.uk-container-center {}
+	.section__title {
+		color: $color-main;
+		text-align: center;
+		margin-bottom: 39px;
+	}
+	.uk {
+		&-nav {
+			&-parent-icon {
+
+			}
+			&-sub {
+				padding: 30px 20px;
+				line-height: 1.3;
+			}
+		}
+		&-parent {
+			&+* {
+				margin-top: 20px;
+			}
+			&>a {
+				@include border-radius(5px);
+				@include trs(.3s);
+				position: relative;
+				color: $color-main;
+				font-family: "Muller Regular";
+				font-size: 21px;
+				padding: 19px 21px 18px;
+				@include box-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+				&:hover {
+					background-color: #e6e6e6;
+					color: $color-main;
+					@include box-shadow(none);
+				}
+				&:after {
+					content: '\f107';
+					font-size: 52px;
+					width: auto;
+					position: absolute;
+					right: 22px;
+					top: 50%;
+					margin-top: -34px;
+					margin-right: 0;
+					color: #4c4c4c;
+				}
+			}
+			&.uk-open {
+				&>a {
+					background-color: $color-success;
+					@include box-shadow(none);
+					&:hover {
+						background-color: lighten($color-success, 10%);
+					}
+					&:after {
+						content: "\f106";
+					}
+				}
+			}
+		}
 	}
 }
 
