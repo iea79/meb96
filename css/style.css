@@ -1537,11 +1537,11 @@ section {
       font-family: "Muller Bold";
       width: 45%;
       color: #000000; }
-    .contact__list dl {
+    .contact__list dd {
       overflow: hidden;
       text-align: right;
       margin-bottom: 25px; }
-      .contact__list dl a {
+      .contact__list dd a {
         color: #000000; }
   .contact__descr {
     font-size: 18px;
