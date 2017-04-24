@@ -1313,7 +1313,12 @@ section {
 			}
 			&_item {
 				&:hover {
-					padding: -10px;
+					margin: -10px;
+					.sofas__grid_description {
+						position: static;
+						padding: 0;
+						@include box-shadow(none);
+					}
 				}
 			}
 		}
@@ -1361,6 +1366,7 @@ section {
 				}
 			}
 			&_name {
+				font-size: 20px;
 			}
 			&_sub {
 			}
@@ -2276,9 +2282,53 @@ section {
 		
 	}
 	@media (max-width: 767px) {
-		
+		.sofas__grid {
+			&_wrapp {}
+			&_item {}
+			&_img {}
+			&_description {
+				height: 83px;
+			}
+			.sofas__grid_name {
+			}
+			&_price {}
+			&_price_old {}
+			&_color {
+			}
+			&_color_title {
+			}
+			&_size {}
+			&_size_item {}
+			&_size_name {}
+		}
+		.section__title {
+			padding-left: 0;
+			&:before {
+				display: none;
+			}
+		}
 	}
 	@media (max-width: 480px) {
+		.sofas__grid {
+			margin-top: 50px;
+			&_wrapp {}
+			&_item {}
+			&_img {}
+			&_description {
+				// height: 80px;
+			}
+			.sofas__grid_name {
+			}
+			&_price {}
+			&_price_old {}
+			&_color {
+			}
+			&_color_title {
+			}
+			&_size {}
+			&_size_item {}
+			&_size_name {}
+		}
 		.section__title {
 			padding-left: 0;
 			&:before {
@@ -2377,7 +2427,15 @@ section {
 		
 	}
 	@media (max-width: 480px) {
-		
+		&_point {
+			display: none;
+		}
+		&_name {
+			font-size: 22px;
+		}
+		p {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -2519,7 +2577,35 @@ section {
 		}
 	}
 	@media (max-width: 480px) {
-		
+		.section__title {
+		}
+		&__row {
+		}
+		&__img {
+			float: none;
+			margin-bottom: 10px;
+			text-align: center;
+			width: 100%;
+			img {
+				width: 100px;
+			}
+		}
+		&__title {
+			font-size: 20px;
+		}
+		&__list {
+			font-size: 16px;
+			li {
+			}
+		}
+		&__form {
+			&_title {
+			}
+			input[type=text] {
+			}
+			.uk-button {
+			}
+		}
 	}
 }
 
@@ -2629,7 +2715,33 @@ section {
 		
 	}
 	@media (max-width: 480px) {
-		
+		&__title {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&__wrapp {
+		}
+		&__item {
+			margin-bottom: 20px;
+		}
+		&__img {
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+			img {
+				width: 100px;
+			}
+		}
+		&__text {
+			display: block;
+			width: 100%;
+			font-size: 16px;
+		}
+		&__name {
+			text-align: center;
+			font-size: 22px;
+		}
 	}
 }
 

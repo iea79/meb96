@@ -972,7 +972,16 @@ section {
     .sofas__grid_price_old {
       font-size: 14px; }
   .sofas__grid_item:hover {
-    padding: -10px; } }
+    margin: -10px; }
+    .sofas__grid_item:hover .sofas__grid_description {
+      position: static;
+      padding: 0;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; } }
+@media (max-width: 480px) {
+  .sofas__grid_name {
+    font-size: 20px; } }
 
 .promo {
   border-bottom: 1px solid #cdcdcd;
@@ -1490,7 +1499,16 @@ section {
     .gift .sofas__grid_color_title {
       font-size: 12px;
       color: #808080; }
+  @media (max-width: 767px) {
+    .gift .sofas__grid_description {
+      height: 83px; }
+    .gift .section__title {
+      padding-left: 0; }
+      .gift .section__title:before {
+        display: none; } }
   @media (max-width: 480px) {
+    .gift .sofas__grid {
+      margin-top: 50px; }
     .gift .section__title {
       padding-left: 0; }
       .gift .section__title:before {
@@ -1565,6 +1583,13 @@ section {
     .how__work_grid:before {
       content: '';
       display: none; } }
+  @media (max-width: 480px) {
+    .how__work_point {
+      display: none; }
+    .how__work_name {
+      font-size: 22px; }
+    .how__work p {
+      font-size: 16px; } }
 
 .delivery {
   padding: 5% 0 4.5%; }
@@ -1662,6 +1687,18 @@ section {
       .delivery__form input[type=text] {
         padding: 10px;
         margin-bottom: 15px; } }
+  @media (max-width: 480px) {
+    .delivery__img {
+      float: none;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 100%; }
+      .delivery__img img {
+        width: 100px; }
+    .delivery__title {
+      font-size: 20px; }
+    .delivery__list {
+      font-size: 16px; } }
 
 .reason {
   background: url('../img/reason-bg.jpg?1492969825') no-repeat center center;
@@ -1738,6 +1775,26 @@ section {
     .reason__item {
       max-width: 500px;
       margin: 15px auto; } }
+  @media (max-width: 480px) {
+    .reason__title {
+      padding-left: 0;
+      padding-right: 0; }
+    .reason__item {
+      margin-bottom: 20px; }
+    .reason__img {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px; }
+      .reason__img img {
+        width: 100px; }
+    .reason__text {
+      display: block;
+      width: 100%;
+      font-size: 16px; }
+    .reason__name {
+      text-align: center;
+      font-size: 22px; } }
 
 .review {
   padding: 4.3% 0 8.3%; }
