@@ -1103,7 +1103,7 @@ section {
         box-shadow: 0 0 19px rgba(0, 0, 0, 0.5); }
 
 .used {
-  margin-bottom: 9.1%; }
+  margin-bottom: 6.8%; }
   .used .section__title {
     margin-bottom: 48px; }
   .used__name {
@@ -1112,8 +1112,51 @@ section {
     margin-bottom: 25px;
     text-align: center; }
 
+.form__line_2 {
+  position: relative;
+  background: url('../img/form_2.jpg?1493039070') no-repeat center center;
+  background-size: cover;
+  padding-bottom: 4.2%; }
+  .form__line_2 .section__title {
+    float: right;
+    color: #fff;
+    margin: 6.3% 0 3.1%;
+    width: 59.5%; }
+  .form__line_2 .form__line_sofa {
+    position: absolute;
+    top: -43px;
+    left: 0;
+    width: 40%;
+    height: 467px;
+    background: url('../img/form_sofa.png?1493039082') no-repeat center center;
+    background-size: contain; }
+  .form__line_2 .uk-form {
+    float: right;
+    width: 62.3%; }
+    .form__line_2 .uk-form input[type=text] {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      margin-bottom: 16px;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px; }
+    .form__line_2 .uk-form label {
+      display: block;
+      border-left: 3px solid #fac85a;
+      color: #ffffff;
+      font-size: 24px;
+      padding: 0 15px;
+      margin-bottom: 16px; }
+  .form__line_2 .uk-button {
+    font-family: "Muller Bold";
+    font-size: 18px;
+    padding: 16px;
+    width: 100%;
+    margin-top: 23px; }
+
 .reccomend {
-  padding: 6.3% 0 4.6%;
+  padding: 4.7% 0 4.6%;
   background-color: #f2f2f2; }
   .reccomend .section__title {
     color: #000000;
@@ -1156,7 +1199,7 @@ section {
         transform: rotate(180deg); }
 
 .gift {
-  padding: 7% 0 4%; }
+  padding: 4% 0 3.4%; }
   .gift .section__title {
     color: #000000;
     padding-left: 122px;
@@ -1186,7 +1229,7 @@ section {
       color: #808080; }
 
 .how__work {
-  padding: 7.4% 0 7%;
+  padding: 5.4% 0 5%;
   text-align: center;
   background-color: #fac85a; }
   .how__work .section__title {
@@ -1252,7 +1295,7 @@ section {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3); }
 
 .delivery {
-  padding: 6% 0 6.3%; }
+  padding: 5% 0 4.5%; }
   .delivery .section__title {
     color: #000000;
     text-align: center;
@@ -1321,7 +1364,7 @@ section {
 
 .reason {
   background: url('../img/reason-bg.jpg?1492969825') no-repeat center center;
-  padding: 3.5% 0 4.5%;
+  padding: 2.7% 0 3.4%;
   color: #ffffff;
   background-size: cover; }
   .reason__title {
@@ -1366,7 +1409,7 @@ section {
     margin-bottom: 9px; }
 
 .review {
-  padding: 5.7% 0 10.9%; }
+  padding: 4.3% 0 8.3%; }
   .review .section__title {
     color: #000000;
     text-align: center;
@@ -1429,7 +1472,7 @@ section {
         content: url('../img/next.png?1493030978'); }
 
 .form__line_3 {
-  padding: 4.3% 0 6.3%;
+  padding: 3.2% 0 4.7%;
   background: url('../img/form_3.jpg?1493032158') no-repeat center center;
   background-size: cover; }
   .form__line_3 .section__title {
@@ -1456,7 +1499,7 @@ section {
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3); }
 
 .question {
-  padding: 6.3% 0 5.2%; }
+  padding: 4.9% 0 4.1%; }
   .question .section__title {
     color: #000000;
     text-align: center;
@@ -1523,13 +1566,14 @@ section {
     max-width: 703px;
     width: 100%;
     float: right;
-    padding: 16% 35px 16%; }
+    padding: 11.5% 35px 11%; }
   .contact__map {
     width: 50%;
     position: absolute;
     height: 100%;
     width: 50%;
-    left: 50%; }
+    left: 50%;
+    overflow: hidden; }
   .contact__list {
     font-size: 21px;
     max-width: 440px; }
