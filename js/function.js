@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// First screen full height
 	function setHeiHeight() {
 	    $('.first__screen').css({
-	        minHeight: $(window).height() + 'px'
+	        height: $(window).height() + 'px'
 	    });
 	}
 	setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
@@ -36,25 +36,30 @@ $(document).ready(function() {
     //             }
     //     });
 
-    var pageScroll = true;
+    var isAnimating  = false;
 
-    $(window).bind('mousewheel', function(event) {
+	$(window).bind('mousewheel', function(event) {
 	    var headerTop = $('.first__screen').height();
 	    	nextSection = $('#sofas').offset().top;
 
-		if (event.originalEvent.wheelDelta >= 0) {
-		    // console.log('Scroll up');
-		    pageScroll = false;
+		if( isAnimating ) {
+		   return false;
 		}
-		else {
-		    // console.log('Scroll down');
-		    pageScroll = true;
-	        if( $(window).scrollTop() > 0 && $(window).scrollTop() < headerTop ) {
-	            $('html, body').animate({ scrollTop: nextSection }, 500);
-	        }
-		}
-	});
 
+		if (event.originalEvent.wheelDelta > 0) {
+		    isAnimating  = false;
+		} else {
+		    isAnimating  = true;
+		    if ($(window).scrollTop() < headerTop) {	    	
+		        $('html, body').animate({ scrollTop: nextSection }, 500, function(){
+		            isAnimating  = false;
+		        });
+		    } else {
+				isAnimating  = false;
+		    }
+		}
+
+	});
     
 	$('.reccomend__more').on('click', function(event) {
 		event.preventDefault();
