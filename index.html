@@ -34,7 +34,7 @@
 		    	<a href="tel:8-800-777-32-29" class="uk-navbar-tel">8-800-777-32-29</a>
 		    	<a href="#" class="uk-button uk-button-success">Заказать звонок</a>
 		    </div>
-		    <a href="" class="uk-navbar-toggle uk-visible-small"></a>
+		    <a href="" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas="{target:'#offcanvas'}"></a>
 		    <ul id="menu" class="uk-navbar-nav uk-navbar-center">
 		    	<li><a href="#sofas">Диваны</a></li>
 		    	<li><a href="#materials">Материалы</a></li>
@@ -613,14 +613,17 @@
 				<div class="used__item">
 					<div class="used__name">Домашний кинотеатр</div>
 					<img src="img/used1.jpg" alt="">
+					<img class="used__hover" src="img/used3.jpg" alt="">
 				</div>
 				<div class="used__item">
 					<div class="used__name">Комфортно лежать</div>
 					<img src="img/used2.jpg" alt="">
+					<img class="used__hover" src="img/used3.jpg" alt="">
 				</div>
 				<div class="used__item">
 					<div class="used__name">Застолье на 8 человек</div>
 					<img src="img/used3.jpg" alt="">
+					<img class="used__hover" src="img/used2.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -698,7 +701,7 @@
 		    						1664х810х832 мм
 		    					</div>
 		    				</div>
-		    				<div class="uk-button uk-button-success">Заказать</div>
+		    				<div class="uk-button uk-button-danger">Заказать</div>
 		    			</div>
 		    		</div>
 	    		</div>
@@ -728,7 +731,7 @@
 		    						1664х810х832 мм
 		    					</div>
 		    				</div>
-		    				<div class="uk-button uk-button-success">Заказать</div>
+		    				<div class="uk-button uk-button-danger">Заказать</div>
 		    			</div>
 		    		</div>
 	    		</div>
@@ -756,7 +759,7 @@
 		    						1664х810х832 мм
 		    					</div>
 		    				</div>
-		    				<div class="uk-button uk-button-success">Заказать</div>
+		    				<div class="uk-button uk-button-danger">Заказать</div>
 		    			</div>
 		    		</div>
 	    		</div>
@@ -1050,6 +1053,20 @@
 		</div>
 	</section>
 	<!-- end contact -->
+
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+	    <a href="#firstPage" class="uk-navbar-brand"><img src="img/logo.png" alt=""/></a>
+        <ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+        	<li><a href="#sofas">Диваны</a></li>
+        	<li><a href="#materials">Материалы</a></li>
+        	<li><a href="#delivery">Доставка</a></li>
+        	<li><a href="#how_work">Как получить</a></li>
+        	<li><a href="#review">Отзывы</a></li>
+        	<li><a href="#contact">Контакты</a></li>
+        </ul>
+    </div>
+</div>	
 	
 </body>
 </html>

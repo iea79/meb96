@@ -20,7 +20,7 @@ $(document).ready(function() {
 	$('#menu a[href^="#"]').click( function(){ 
 		var scroll_el = $(this).attr('href'); 
 		if ($(scroll_el).length != 0) {
-		$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+			$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
 		}
 		return false;
 	});
@@ -37,34 +37,8 @@ $(document).ready(function() {
     //     });
 
     var isAnimating  = false;
-
-	// $(window).bind('mousewheel', function(e) {
- //        // e.preventDefault();
- //        // e.stopPropagation();
-
-	//     var headerTop = $('.first__screen').height();
-	//     	nextSection = $('#sofas').offset().top;
-
-	// 	if( isAnimating ) {
-	// 	   return false;
-	// 	}
-
-	// 	if (e.originalEvent.wheelDelta > 0) {
-	// 	    isAnimating  = false;
-	// 	} else {
-	// 	    isAnimating  = true;
-	// 	    if ($(window).scrollTop() < headerTop) {	    	
-	// 	        $('html, body').animate({ scrollTop: nextSection }, 500, function(){
-	// 	            isAnimating  = false;
-	// 	        });
-	// 	    } else {
-	// 			isAnimating  = false;
-	// 	    }
-	// 	}
-
-	// });
-
 	var lastScrollTop = 0;
+
 	$(window).scroll(function(event){
 		var st = $(this).scrollTop();
         // e.preventDefault();
@@ -88,17 +62,14 @@ $(document).ready(function() {
 				isAnimating  = false;
 		    }
 		} else {
-		   // upscroll code
-		    // isAnimating  = true;
-		    // if ($(window).scrollTop() < headerTop) {	    	
-		    //     $('html, body').animate({ scrollTop: 0 }, 500, function(){
-		    //         isAnimating  = false;
-		    //     });
-		    // } else {
-				isAnimating  = false;
-		    // }
+			isAnimating  = false;
 		}
 		lastScrollTop = st;
+	});
+
+	$('.uk-offcanvas a').on('click', function(event) {
+		event.preventDefault();
+		isAnimating  = true;
 	});
     
 	$('.reccomend__more').on('click', function(event) {
