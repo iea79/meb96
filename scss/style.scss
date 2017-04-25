@@ -420,6 +420,21 @@ h1, h2, h3, h4, h5, h6 {
 	}	
 }
 
+.uk-form-select {
+	position: relative;
+	padding-right: 30px;
+	color: $color-main;
+	text-align: left;
+	font-size: 16px;
+	padding: 15px;
+	i {
+		position: absolute;
+		right: 12px;
+		top: 14px;
+		font-size: 25px;
+	}
+}
+
 .uk-text {
 	@each $status_el, $color_el_bg in $el_bg_colors {
 		&-#{$status_el} {
@@ -3252,25 +3267,449 @@ section {
 	}
 }
 
-/* Responsive styles
------------------------------------------------------------------------------ */
-// max-width: 1200px ===========================================================
-@media (max-width: 1200px) {
+// Modals =======================================================================
+.uk-modal {
+	&-dialog {
+		max-width: 655px;
+		padding: 47px 40px 49px;
+		width: 100%;
+	    @include border-radius(6px);
+	    @include box-shadow(0 10px 35px rgba(0, 0, 0, 0.5));
+		&-small {		
+			max-width: 620px;
+		}
+		&-large {
+			max-width: 1340px;
+		}
+		@media (max-width: 767px) {
+			padding: 25px;
+		}
+	}
+	.uk-close {
+		position: absolute;
+		top: -26px;
+		right: -19px;
+		opacity: 1;
+		&:after {
+			content: image-url('close.png');
+		}
+		&:hover {
+			opacity: .5;
+		}
+	}
+	.uk-button {
+		width: 100%;
+		font-family: "Muller Bold";
+		font-size: 18px;
+		margin-bottom: 28px;
+		padding: 16px;
+	}
+	input[type="text"],
+	input[type="email"],
+	.uk-form-select {
+		padding: 15px;
+		width: 100%;
+		font-size: 16px;
+		border: 1px solid #e7e7e7;
+		background-color: #e7e7e7;
+		@include border-radius(2px);
+		margin-bottom: 27px;
+		select {
+			font-size: 16px;
+			padding: 10px;
+		}
+		@media (max-width: 767px) {
+			padding: 13px;
+		}
+	}
+	.uk-grid {
+		label {
+			margin-bottom: 4px;
+			display: block;
+			color: #4d4d4d;
+			font-size: 14px;
+			font-family: "Muller Light";
+		}
+	}
+	@media (max-width: 600px) {
+	}
+	@media (max-width: 700px) {
+		.uk-close {
+			right: 20px;
+		}
+	}
 }
 
-// max-width: 960px ===========================================================
-@media (max-width: 960px) {
-	
+.modal {
+	&-h1 {
+		margin-bottom: 21px;
+		font-size: 28px;
+		font-family: "Muller Bold";
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&-h2 {
+		margin-bottom: 16px;
+		font-size: 21px;
+		font-family: "Muller Light";
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&-h3 {
+		font-size: 16px;
+		font-family: "Muller Light";
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 39px;
+	}
+	&-h4 {
+		font-family: "Muller Light";
+		font-size: 16px;
+		margin: 0 auto 30px;
+		max-width: 410px;
+		text-align: center;
+	}
+	&-sub {
+		color: #4d4d4d;
+		font-size: 14px;
+		text-align: center;
+		font-family: "Muller Regular";
+		a {
+			color: #4d4d4d;
+			// color: $color-main;
+			font-family: "Muller Bold";
+		}
+	}
+	&__discount {
+		color: #ffc950;
+		font-family: "Muller Bold";
+		padding: 35px;
+		margin: 24px -41px;
+		text-align: center;
+		font-size: 38px;
+		text-transform: uppercase;
+		text-align: center;
+		background: image-url('modal-discount-bg.png') no-repeat center center;
+	}
+
 }
 
-// max-width: 760px ===========================================================
-@media (max-width: 767px) {
-	
-}
-
-// max-width: 480px ===========================================================
-@media (max-width: 480px) {
-	
+.uk-close {
 }
 
 
+
+// Callback form ======================================================
+.promo-form {
+	padding: 135px 41px 44px;
+	background: #fff image-url('money.png') no-repeat center 50px;
+	.modal-sub {
+		color: #b3b3b3;
+		font-family: "Muller Light";
+		font-size: 14px;
+	}
+	@media (max-width: 767px) {
+		padding: 135px 25px 25px;
+	}
+}
+
+// Slider modal =======================================================
+.modal {
+	&-slider {
+		// min-height: 650px;
+		padding: 38px 60px;
+		.uk-close:not(.uk-alert-close) {
+			position: absolute;
+			top: -26px;
+			right: -19px;
+			opacity: 1;
+			&:after {
+				content: image-url('close.png');
+			}
+			&:hover {
+				opacity: .5;
+			}
+		}
+		.uk-slider-container {}
+		.uk-slider {}
+		.uk-width-1-1 {}
+		.uk-grid {}
+		&-grid {
+			&_wrapp {
+				position: relative;
+				@extend %clear_a;
+				&:first-child {
+					width: 43%;
+				}
+				&:last-child {
+					width: 57%;
+				}
+			}
+		}
+		.sofas__grid {
+			&_color {
+				margin-top: 2px;
+				&_title {
+					float: left;
+					font-size: 14px;
+					margin-top: 10px;
+					padding-right: 9px;
+				}
+				&_item {
+					&:not(:last-child) {
+						margin-right: 5px;
+					}
+				}
+			}
+			&_name {
+				font-size: 38px;
+				margin-bottom: 0px;
+			}
+			&_sub {
+				font-size: 18px;
+			}
+			&_size {
+				margin-left: -25px;
+				// max-width: 534px;
+				&_item {
+					padding-left: 25px;
+					font-size: 16px;
+					margin-bottom: 17px;
+				}
+				&_name {
+					font-size: 15px;
+				}
+			}
+		}
+		&-description {
+			padding: 30px 0 25px;
+		}
+		.promo {
+			&_total {
+				margin-bottom: 0;
+				border-bottom: none;
+				padding-bottom: 0;
+				float: right;
+				width: 100%;
+				margin-top: 70px;
+				max-width: 675px;
+			}
+			&_left {
+				padding-right: 20px;
+			}
+			&_price_old {
+				margin-bottom: 0px;
+			}
+			&_right {
+				width: 158px;
+				margin-left: 20px;
+			}
+			&_center {
+				overflow: hidden;
+				.uk-button {
+					width: 100%;
+					padding: 23px 10px;
+					font-size: 24px;
+				}
+			}
+		}
+		.uk-alert {
+			top: 22%;
+			left: 19px;
+			position: absolute;
+			@include border-radius(4px 5px 5px 4px);
+			background-color: $color-main;
+			@include opacity(0.8);
+			padding: 13px 15px;
+			color: #ffffff;
+			font-size: 14px;
+		    @include box-shadow(0 5px 20px rgba(0, 0, 0, 0.5));
+			.uk-close {
+				position: absolute;
+				font-size: 11px;
+				right: -15px;
+				top: -15px;
+				opacity: 1;
+				color: $color-main;
+				&:after {
+					content: '\f00d';
+				}
+			}
+		}
+		.uk-badge {
+			position: absolute;
+			right: 0;
+			padding: 8px;
+			font-size: 13px;
+			z-index: 100;
+			i {
+				height: 32px;
+			}
+			&+.uk-badge {
+				right: 80px;
+				&+.uk-badge {
+					right: 160px;
+				}
+			}
+		}
+		.uk-badge-primary {}
+		.icon-percent-o {}
+		.uk-badge-warning {}
+		.icon-cargo {}
+		.uk-badge-success {}
+		.icon-star-o {}
+		.uk-grid-width-large-1-3 {}
+		.uk-button {}
+		.uk-button-danger {}
+		.uk-slidenav {
+			position: absolute;
+			top: 46%;
+			color: $color-main;
+			&:hover {
+				opacity: .7;
+			}
+		}
+		.uk-slidenav-next {
+			right: -60px;
+		}
+		.uk-slidenav-previous {
+			left: -60px;
+		}
+	}
+	.uk-slider {
+		// height: 100%;
+		// width: 100%;
+	}
+	@media (max-width: 1470px) {
+		&-slider {
+			.uk-close:not(.uk-alert-close) {
+				top: 26px;
+				right: 30px;
+			}
+			.uk-slidenav {
+				position: absolute;
+				top: 46%;
+				color: $color-main;
+				&:hover {
+					opacity: .7;
+				}
+			}
+			.uk-slidenav-next {
+				right: 0px;
+			}
+			.uk-slidenav-previous {
+				left: 0px;
+			}
+			.promo {
+				float: none;
+				&_center {
+					.uk-button {
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1023px) {
+		&-slider {
+			padding: 30px 35px;
+			&-grid {
+				margin-left: 0;
+				&_wrapp {
+					padding-left: 0;
+					padding-right: 20px;
+					position: relative;
+					&:first-child,&:last-child {
+						width: 100%;
+					}
+				}
+			}
+			.uk-slidenav-next {
+				right: -15px;
+			}
+			&-description {
+				padding: 20px 0;
+				font-size: 16px;
+			}
+			.uk-slidenav-previous {
+				left: -15px;
+			}
+			.uk-badge {
+				position: absolute;
+				right: 15px;
+				top: -80px;
+				padding: 8px;
+				font-size: 13px;
+				z-index: 100;
+				i {
+					height: 32px;
+				}
+				&+.uk-badge {
+					right: 88px;
+					&+.uk-badge {
+						right: 161px;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		&-slider {
+			.sofas__grid {
+				&_color {
+					&_title {
+						float: none;
+					}
+					&_item {
+					}
+				}
+				&_name {
+					font-size: 34px;
+				}
+				&_sub {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				&_size {
+					&_item {
+					}
+					&_name {
+					}
+				}
+			}
+			.promo {
+				&_total {
+					margin-top: 10px;
+					border-top: 1px solid #b3b3b3;
+				}
+				&_left {
+					float: none;
+				}
+				&_price_old {
+				}
+				&_right {
+					padding-left: 0;
+					float: none;
+					width: 100%;
+					margin: 20px 0;
+					margin-left: 0;
+				}
+				&_center {
+					overflow: inherit;
+
+					.uk-button {
+						width: 93%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.slider-product {
+	&-img {
+		text-align: center;
+		img {
+			// width: 64%;
+		}
+	}
+}
