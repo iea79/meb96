@@ -423,7 +423,7 @@ h1, h2, h3, h4, h5, h6 {
 .uk-text {
 	@each $status_el, $color_el_bg in $el_bg_colors {
 		&-#{$status_el} {
-			color: $color_el_bg;
+			color: $color_el_bg !important;
 		}
 	}	
 }

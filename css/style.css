@@ -362,15 +362,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000; }
 
 .uk-text-primary {
-  color: #6478c8; }
+  color: #6478c8 !important; }
 .uk-text-success {
-  color: #fac85a; }
+  color: #fac85a !important; }
 .uk-text-muted {
-  color: #999999; }
+  color: #999999 !important; }
 .uk-text-warning {
-  color: #aae090; }
+  color: #aae090 !important; }
 .uk-text-danger {
-  color: #ca1f1f; }
+  color: #ca1f1f !important; }
 
 .uk-badge-primary {
   background-color: #6478c8;
