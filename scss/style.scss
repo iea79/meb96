@@ -3203,6 +3203,19 @@ section {
 	}
 }
 
+.uk-offcanvas {
+	.uk-navbar-brand {
+		float: none;
+		@extend %clear_a;
+		display: block;
+		height: 61px;
+		margin-bottom: 20px;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 /* Responsive styles
 ----------------------------------------------------------------------------- */
 // max-width: 1200px ===========================================================

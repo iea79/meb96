@@ -80,7 +80,7 @@
 .icon-percent-o:before {
   content: url("../img/percent-o.svg"); }
 
-.reason .uk-container:after, .header:after, .uk-container:after, .promo_total:after, .delivery__row:after, .reason__item:after, .contact:after {
+.reason .uk-container:after, .header:after, .uk-container:after, .promo_total:after, .delivery__row:after, .reason__item:after, .contact:after, .uk-offcanvas .uk-navbar-brand:after {
   content: '';
   display: table;
   clear: both; }
@@ -2119,6 +2119,14 @@ section {
     .contact__list dt, .contact__list dd {
       width: 100%;
       text-align: left; } }
+
+.uk-offcanvas .uk-navbar-brand {
+  float: none;
+  display: block;
+  height: 61px;
+  margin-bottom: 20px; }
+  .uk-offcanvas .uk-navbar-brand img {
+    max-width: 100%; }
 
 /* Responsive styles
 ----------------------------------------------------------------------------- */
